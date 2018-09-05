@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tvIdHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvNamaHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:layout_below="@id/tvIdHistory"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvDokterHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Dokter"
+            android:layout_below="@id/tvNamaHistory"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvTreatmentHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Treatment"
+            android:layout_below="@id/tvDokterHistory"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvDayHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Hari"
+            android:layout_below="@id/tvTreatmentHistory"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

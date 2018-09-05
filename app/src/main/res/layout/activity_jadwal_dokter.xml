@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.example.kholis.doctorx.JadwalDokterActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSchedule"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/irna_round"
+                android:paddingStart="80dp"
+                android:paddingEnd="0dp"
+                android:contentDescription="@string/none">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/judulHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/jadwal_dokter"
+            android:layout_below="@id/toolbarSchedule"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/judulHistory">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TableLayout
+
+                    android:id="@+id/myTableLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:id="@+id/myTableRow"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/nama"
+                            android:layout_width="145dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/nama"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/hari"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/hari"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/jammulai"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/mulai"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/jamselesai"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/selesai"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/keahlian"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="@string/keahlian"
+                            android:textColor="#000" />
+                    </TableRow>
+                    <View
+                        android:layout_height="3dip"
+                        android:layout_width="match_parent"
+                        android:background="#ff0000"/>
+                </TableLayout>
+                <ListView
+                    android:id="@+id/records_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                </ListView>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationViewSchedule"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@color/bottom_navigation_color"
+        app:itemTextColor="@color/bottom_navigation_color"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

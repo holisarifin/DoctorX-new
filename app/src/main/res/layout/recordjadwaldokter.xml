@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        >
+        <TextView
+            android:id="@+id/record_nama"
+            android:fontFamily="serif"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cell_shape"
+            android:ellipsize = "end"
+            android:padding = "2dp"
+
+            android:text="Nama"/>
+        <TextView
+            android:id="@+id/record_hari"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textColor="#000"
+            android:fontFamily="serif"
+            android:background="@drawable/cell_shape"
+            android:padding = "2dp"
+            android:text="Hari"
+            />
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/record_jammulai"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cell_shape"
+            android:fontFamily="serif"
+            android:ellipsize = "end"
+            android:padding = "2dp"
+            android:text="Jam Mulai"
+            />
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/record_jamselesai"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:ellipsize = "end"
+            android:padding = "2dp"
+            android:background="@drawable/cell_shape"
+            android:text="Jam Selesai"
+            />
+        <TextView
+            android:textColor="#000"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/record_keahlian"
+            android:fontFamily="serif"
+            android:ellipsize = "end"
+            android:padding = "2dp"
+            android:text="Keahlian"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">RC IRNA</string>
+
+    <string name="daftar_pasien">Daftar Pasien</string>
+    <string name="riwayat_pasien">Riwayat Pasien</string>
+    <string name="daftar_treatment">Daftar Treatment</string>
+    <string name="daftar_konsultasi">Daftar Konsultasi</string>
+    <string name="helper">Helper</string>
+
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="nama_panggilan">Nama Panggilan</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="status_pernikahan">Status Pernikahan</string>
+    <string name="tempat_lahir">Tempat Lahir</string>
+    <string name="alamat">Alamat</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kabupaten_kota">Kabupaten/Kota</string>
+    <string name="kodepos">Kodepos</string>
+
+    <string name="none"></string>
+    <string name="insert">Insert</string>
+    <string name="back">Back</string>
+
+    <string name="jadwal_dokter">Jadwal Dokter</string>
+    <string name="nama">Nama</string>
+    <string name="hari">Hari</string>
+    <string name="mulai">Mulai</string>
+    <string name="selesai">Selesai</string>
+    <string name="keahlian">Keahlian</string>
+
+    <string name="pendaftaran_pasien">Pendaftaran Pasien</string>
+
+    <string name="nama_pasien">Nama Pasien</string>
+    <string name="colon">:</string>
+    <string name="cari_nama">Cari Nama</string>
+    <string name="id_pasien">ID Pasien</string>
+    <string name="cari_id">Cari ID</string>
+
+    <string name="id">ID</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+
+    <string name="cari">Cari</string>
+    <string name="idataunama">ID / Nama</string>
+    <string name="tanggal_konsultasi">Tanggal Konsultasi</string>
+    <string name="dokter">Dokter</string>
+    <string name="keluhan">Keluhan</string>
+    <string name="submit">Submit</string>
+
+    <string name="jenis_tindakan">Jenis Tindakan</string>
+    <string name="tanggal_tindakan">Tanggal Tindakan</string>
+
+    <string-array name="search_array">
+        <item>ID</item>
+        <item>Nama</item>
+    </string-array>
+    <string-array name="daftar_treatment">
+        <item>Facial</item>
+        <item>Chemical Peeling</item>
+        <item>Akupuntur</item>
+        <item>Whitening Injection</item>
+        <item>Mikrodermabrasi</item>
+        <item>Mesotheraphy</item>
+        <item>Dermaroller</item>
+        <item>Baby Spa</item>
+        <item>Perawatan Rambut</item>
+        <item>BB Glow</item>
+    </string-array>
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/irna_round"
+                android:paddingStart="80dp"
+                android:paddingEnd="0dp"
+                android:contentDescription="@string/none">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.kholis.doctorx.Slider.SliderView
+                android:id="@+id/sliderView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.example.kholis.doctorx.Slider.SliderView>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_indicator"/>
+
+        <LinearLayout
+            android:id="@+id/pagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layout_top"
+        android:id="@+id/layoutsatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageDaftarPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="0dp"
+            app:srcCompat="@mipmap/daftar_pasien"
+            android:contentDescription="@string/none"/>
+
+        <ImageView
+            android:id="@+id/imageRiwayatPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="0dp"
+            app:srcCompat="@mipmap/medical_history"
+            android:contentDescription="@string/none"/>
+
+        <ImageView
+            android:id="@+id/imageJadwalDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="0dp"
+            app:srcCompat="@mipmap/jadwal_dokter"
+            android:contentDescription="@string/none"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutdua"
+        android:layout_below="@id/layoutsatu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/tvDaftarPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"
+            android:text="@string/daftar_pasien" />
+
+        <TextView
+            android:id="@+id/tvRiwayatPasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="0dp"
+            android:text="@string/riwayat_pasien" />
+
+        <TextView
+            android:id="@+id/tvJadwalDokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/jadwal_dokter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouttiga"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/layoutdua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imageDaftarKonsultasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@mipmap/daftar_konsultasi"
+            android:contentDescription="@string/none"/>
+
+        <ImageView
+            android:id="@+id/imageDaftarTreatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="60dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@mipmap/daftar_treatment"
+            android:contentDescription="@string/none"/>
+
+        <ImageView
+            android:id="@+id/imageHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@mipmap/helper"
+            android:contentDescription="@string/none"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutempat"
+        android:layout_below="@id/layouttiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+        <TextView
+            android:id="@+id/tvDaftarKonsultasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:text="@string/daftar_konsultasi" />
+
+        <TextView
+            android:id="@+id/tvDaftarTreatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:text="@string/daftar_treatment" />
+
+        <TextView
+            android:id="@+id/tvHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="40dp"
+            android:paddingEnd="0dp"
+            android:text="@string/helper" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@color/bottom_navigation_color"
+        app:itemTextColor="@color/bottom_navigation_color"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>
